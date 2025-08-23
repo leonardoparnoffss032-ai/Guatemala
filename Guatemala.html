@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabalho sobre a Guatemala</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1d976c, #93f9b9);
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header button {
+      margin: 0 10px;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #fff;
+      color: #1d976c;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    header button:hover {
+      background: #1d976c;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .conteudo {
+      width: 70%;
+      margin: 30px auto;
+      text-align: justify;
+      text-indent: 30px;
+      font-size: 18px;
+      line-height: 1.8;
+      display: none;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      animation: fadeIn 0.5s ease;
+    }
+
+    .conteudo.active {
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-indent: 0;
+      color: #1d976c;
+    }
+
+    .imagem, .imagem2, .imagem3 {
+      float: right;
+      margin: 0 0 10px 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    .imagem { width: 320px; }
+    .imagem2 { width: 380px; }
+    .imagem3 { width: 350px; }
+
+    iframe {
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button onclick="mostrarSecao('introducao')">Introdução</button>
+    <button onclick="mostrarSecao('geografia')">Geografia</button>
+    <button onclick="mostrarSecao('religiao')">Religião</button>
+    <button onclick="mostrarSecao('musica')">Música</button>
+    <button onclick="mostrarSecao('turismo')">Pontos Turísticos</button>
+  </header>
+
+  <!-- Seções -->
+  <div id="introducao" class="conteudo active">
+    <h1>Guatemala</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg" alt="Bandeira da Guatemala" class="imagem">
+    <p> Guatemala es un país ubicado en América Central, conocido por su impresionante diversidad cultural, paisajes notables y una rica herencia histórica. Con fronteras que se extienden desde el Océano Pacífico hasta el Caribe, el país conecta el norte de América Central con el sur de México, ocupando una posición geográfica estratégica en la región. </p>
+    <p> Con una población de alrededor de 18 millones de habitantes, Guatemala es el país más poblado de América Central. Su sociedad está compuesta por una notable mezcla de culturas, con destaque para los pueblos mayas, que mantienen vivas sus tradiciones, lenguas y formas de organización comunitaria, junto a la mayoría ladina (mestiza), que representa la convivencia entre las raíces indígenas y la herencia española. </p>
+    <p> La historia guatemalteca está marcada por contrastes. En el pasado, fue uno de los centros más importantes de la civilización maya, cuyas impresionantes ruinas aún hoy atraen a estudiosos y visitantes de todo el mundo. Ya en el período moderno, el país enfrentó décadas de inestabilidad política y un largo conflicto armado interno, que finalizó en 1996 con la firma de los Acuerdos de Paz — un hito importante en la reconstrucción democrática. </p>
+    <p> El territorio guatemalteco alberga paisajes variados, que van desde selvas tropicales y llanuras en el norte, hasta cadenas montañosas y más de 30 volcanes en el sur, algunos todavía activos. Esta geografía diversa contribuye tanto a su riqueza ecológica como a los desafíos naturales que enfrenta, como terremotos y deslizamientos de tierra. </p>
+    <p> Económicamente, Guatemala tiene una base productiva centrada en la agricultura de exportación — con destaque para el café, el cardamomo y la caña de azúcar — además de sectores en crecimiento como la industria ligera, el turismo y los servicios. Aun así, enfrenta desafíos importantes relacionados con la desigualdad social, la pobreza rural y el acceso a la educación y la salud. </p>
+  </div>
+
+  <div id="geografia" class="conteudo">
+    <h1>Geografia</h1>
+    <img src="https://cdn0.ecologiaverde.com/es/posts/7/3/1/flora_y_fauna_de_guatemala_2137_orig.jpg" alt="Flora Guatemala" class="imagem2">
+    <p> La flora de Guatemala es sumamente diversa, con más de 8.000 especies vegetales, incluidas muchas especies nativas y endémicas, debido a sus diferentes zonas climáticas. Guatemala también posee una fauna rica y diversa, con destaque para el quetzal, ave nacional y símbolo del país. Además de él, la región alberga una variedad de mamíferos como jaguares, pumas, monos, ocelotes, perros de la pradera y coyotes. La vida acuática también es abundante, con bagres, camarones, ostras, langostas, cangrejos y tortugas. En los bosques es posible encontrar cocodrilos, pavos salvajes, loros, tucanes e incluso guacamayas rojas en peligro de extinción. </p>
+    <p> Situado en el oeste de América Central, el país posee un territorio sujeto a terremotos, y está atravesado por dos cordilleras, la Sierra Madre y la Sierra de los Cuchumatanes, que influyen en su diversidad climática y geográfica. </p>
+    <p> El país cuenta con 14 ecorregiones que varían desde manglares (4 especies) en ambas costas oceánicas, bosques secos y matorrales en las tierras altas orientales, selvas tropicales y subtropicales, pantanos, bosques nublados en la región de Verapaz, bosques mixtos y bosques de pinos en las tierras altas. </p>
+  </div>
+
+  <div id="religiao" class="conteudo">
+    <h1>Religião</h1>
+    <img src="https://thumbs.dreamstime.com/b/igreja-amarela-e-vulc%C3%A3o-agua-da-ant%C3%ADgua-guatemala-de-ap%C3%B3stolo-san-pedro-na-ao-fundo-180487564.jpg" alt="Igreja" class="imagem3">
+    <p> Casi un tercio de todos los guatemaltecos son ahora protestantes y/o cristianos evangélicos. El ascenso del cristianismo evangélico en Guatemala comenzó en 1975, cuando terremotos destruyeron varias aldeas en las tierras altas. Agencias humanitarias internacionales, muchas de ellas cristianas, acudieron rápidamente a ayudar y terminaron consiguiendo conversos. Otro factor que contribuyó al auge del cristianismo evangélico fue la guerra civil de la década de 1980. Durante ese período, muchos guatemaltecos encontraron esperanza en un sistema de creencias que prometía recompensas en el cielo, a pesar de un presente desafiante. </p>
+    <p> Algunas aldeas guatemaltecas se convirtieron casi totalmente al cristianismo evangélico y lograron resultados increíbles. Un buen ejemplo es la ciudad de Almolonga, donde el alcoholismo alguna vez fue generalizado, pero ahora está casi totalmente erradicado. La cárcel de la ciudad también está cerrada desde hace años, y la ciudad exporta frutas y verduras a El Salvador, generando buenos ingresos para muchas familias. Los evangélicos suelen usar esto como ejemplo del bien que su fe puede traer. </p>
+  </div>
+
+  <div id="musica" class="conteudo">
+    <h1>Música</h1>
+    <iframe class="imagem2" width="380" height="215" src="https://www.youtube.com/embed/1O8mA565IGg" title="Hino del Guatemala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p> Los diversos grupos lingüísticos mayas guatemaltecos pertenecen a las ramas mam, quiché y q’eqchi’ de la familia maya, habitando, respectivamente, las tierras altas del oeste y centro-norte, centro-sur y noreste. Su música tradicional presenta influencias más fuertes de la música colonial española que de sus raíces mayas más antiguas. Sin embargo, la reverencia con que consideran su herencia ancestral, fuente de su mitología, ritual, artes y música, desincentiva la modificación de las costumbres tradicionales y explica la preservación de algunos instrumentos y elementos estilísticos de su música antigua. </p>
+    <p> La forma más popular y difundida es el son guatemalteco (también llamado son chapín), la danza nacional de Guatemala. El son guatemalteco es interpretado por marimbas, individualmente o en conjunto, y por conjuntos de guitarras de seis y doce cuerdas, guitarrillas y maracas. Acompaña una danza de pareja en la que los compañeros bailan juntos sin tocarse, enfatizando el ritmo del son con zapateado o golpes de pies, que relacionan la danza con el estilo flamenco español. El son guatemalteco es frecuentemente cantado por un dúo, trío o cuarteto masculino, con un texto pastoral o folclórico, con estrofas generalmente de cuatro versos octosílabos. </p>
+  </div>
+
+  <div id="turismo" class="conteudo">
+    <h1>Pontos Turísticos</h1>
+    <img src="https://www.abraceomundo.com/wp-content/uploads/2017/02/como-chegar-em-tikal-guatemala.jpg" alt="Ruínas de Tikal" class="imagem">
+    <p> Guatemala cuenta con una gran variedad de puntos turísticos que atraen visitantes de todo el mundo. Entre los más emblemáticos se encuentra el Parque Nacional Tikal, en el corazón de la selva de Petén, donde se conservan imponentes ruinas mayas, incluyendo templos y pirámides que fueron parte de una de las ciudades más influyentes de la antigua civilización maya. </p>
+    <p> Otro destino importante es la ciudad colonial de Antigua Guatemala, declarada Patrimonio de la Humanidad por la UNESCO. Antigua conserva calles empedradas, iglesias barrocas y coloridas fachadas coloniales, además de ofrecer una vista impresionante del Volcán de Agua. La ciudad es también un centro cultural muy visitado durante la Semana Santa, conocida mundialmente por sus coloridas alfombras de aserrín. </p>
+    <p> El Lago de Atitlán, rodeado por volcanes y pueblos mayas, es considerado uno de los lagos más bellos del mundo. Sus aguas profundas y tranquilas reflejan el paisaje montañoso, creando un entorno natural de gran belleza que atrae turistas interesados tanto en el descanso como en actividades de ecoturismo. </p>
+    <p> Además, Guatemala ofrece atracciones como el Mercado de Chichicastenango, famoso por su artesanía y tradiciones indígenas; las grutas de Lanquín y el monumento natural Semuc Champey, con sus impresionantes piscinas naturales de aguas turquesa. Estos lugares muestran la riqueza cultural y natural que hacen de Guatemala un destino turístico único en América Latina. </p>
+  </div>
+
+  <script>
+    function mostrarSecao(secao) {
+      const todasSecoes = document.querySelectorAll('.conteudo');
+      todasSecoes.forEach(div => div.classList.remove('active'));
+      document.getElementById(secao).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
